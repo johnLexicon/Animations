@@ -13,10 +13,18 @@
       background-color: rgb(26, 26, 128);
     }
 
+    .parent:hover .child {
+      transform: translate(50%, 50%);
+      transform: rotate(45deg);
+      transform: scale(0.5);
+      transform: skew(20deg);
+    }
+
     .child {
       height: 50%;
       width: 50%;
       background-color: rgb(167, 24, 24);
+      transition: transform 2s ease-in;
     }
   </style>
 </head>
